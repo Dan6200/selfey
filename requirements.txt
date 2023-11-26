@@ -1,0 +1,16 @@
+Django
+djangorestframework
+django-rest-auth
+django-tailwind
+django-tailwind[reload]
+django-cors-headers
+djangorestframework-simplejwt
+drf-yasg
+google-api-core
+google-api-python-client
+google-auth
+google-auth-httplib2
+googleapis-common-protos
+gunicorn
+Pillow
+python-dotenv
