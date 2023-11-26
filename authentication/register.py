@@ -24,10 +24,8 @@ def register_social_user(provider, user_id, email, name):
 
         if provider == filtered_user_by_email[0].auth_provider:
 
-            print('email', backend.authenticate(email=email))
             registered_user = backend.authenticate(email=email, password=os.getenv('SOCIAL_SECRET'))
 
-            print('user is already registered', registered_user)
 
             if registered_user is not None:
                 return {
