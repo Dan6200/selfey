@@ -30,6 +30,7 @@ def register_social_user(provider, user_id, email, name):
             if registered_user is not None:
                 return {
                     'username': registered_user.username,
+                    'id': registered_user.id,
                     'email': registered_user.email,
                     'tokens': registered_user.tokens()}
             else:
@@ -43,6 +44,7 @@ def register_social_user(provider, user_id, email, name):
                 new_user = backend.authenticate(email=email)
                 return {
                     'email': new_user.email,
+                    'id': new_user.id,
                     'username': new_user.username,
                     'tokens': new_user.tokens()
                 }
